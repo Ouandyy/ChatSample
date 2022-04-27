@@ -50,7 +50,6 @@ const Chat = () => {
   const getUrlVChatId = urlSearchParams.get('chatid');
   const getUrlStoreName = urlSearchParams.get('storename');
 
-  // TO ACCESS THIS users[selected].chatId
   const handleScroll = () => {
     if (messagesParentRef.current) {
       messagesParentRef.current.scrollTop = messagesParentRef.current.scrollHeight;
@@ -58,7 +57,6 @@ const Chat = () => {
     }
   };
 
-  // TO ACCESS THIS newUsers[selected].chatId
 
   useEffect(() => {
     handleScroll();
